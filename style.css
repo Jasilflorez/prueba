@@ -1,0 +1,69 @@
+* {
+    font-family:'franuces', serif;
+    color: #fff;
+}
+body,html {
+    margin: 0%;
+    background-image: url(.//sasuke.png);
+    padding: 0%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.493);
+display: grid;
+grid-template-columns: repeat(4, 75px);
+grid-template-rows: 160px repeat(5, 75px);
+padding: 15px;
+border-radius: 34px;
+box-shadow: 15px 10px 0px 5px #f1e8e811;
+}
+button {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #000000;
+    box-shadow: 5px 5px 10px -3px #f1e8e879, -5px -5px 15px 3px #f1e8e879;
+}
+button:active {
+background-color: #000000;
+}
+button:focus {
+    outline: none;
+}
+.col-2 {
+    grid-column: span 2;
+}
+.display {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #ffffff28;
+    border-radius:32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #f1e8e879;
+}
+#valor-actual {
+    font-size: 1.5em;
+}
+#valor-anterior {
+    font-size: 2em;
+}
+
+button:hover{
+    background: #8d0303;
+    box-shadow: 0 0 10px #910b0bc0, 0 0 40px
+    #ff0000, 0 0 80px #ff0000;
+    transition-delay: s1;
+}
